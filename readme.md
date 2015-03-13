@@ -1,5 +1,11 @@
 Qt 与 iOS 学习笔记
 
+### Qt C++
+
+* [C++ 简介](./cpp/cpp.md)
+* [Qt 简介](./cpp/qt.md)
+
+### Qt Vs iOS
 #### 项目及配置
 * [项目及文件](new.md)
 * [本地化语言](language.md)
@@ -27,3 +33,4 @@ Qt 与 iOS 学习笔记
 
 * [Qt参考文档](http://www.kuqin.com/qtdocument/index.html)
 * [《Qt Creator 快速入门》](http://book.douban.com/subject/10745760/)
+* [《C++ Qt 设计模式》](http://book.douban.com/subject/10764099/)

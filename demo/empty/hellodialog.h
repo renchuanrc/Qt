@@ -3,7 +3,9 @@
 
 #include <QDialog>
 
-
+namespace Ui{
+    class HelloDialog;
+}
 
 class HelloDialog : public QDialog
 {
@@ -16,7 +18,7 @@ signals:
 public slots:
 
 private:
-    Ui::He
+    Ui::HelloDialog *ui;
 };
 
 #endif // HELLODIALOG_H
