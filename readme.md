@@ -10,16 +10,18 @@ Qt 与 iOS 学习笔记
 * [项目及文件](new.md)
 * [本地化语言](language.md)
 * [应用程序图标](icon.md)
+* [快捷键](keyboard.md)
 
 #### 窗体元件
 * [QDialog VS UIWindow](UI/window.md)
 * [界面文件 *.ui VS *.storyboard](UI/ui.md)
-* [普通元件](input.md)
-* [消息传递](message.md)
+* [普通元件](UI/input.md)
+* [消息传递 窗口交换](UI/message.md)
+* [布局](UI/autolayout.md)
 
 #### 流程控制
 * [流程](application.md)
-
+* [调试](debug.md)
 
 #### 数据管理
 * [文件](file.md)

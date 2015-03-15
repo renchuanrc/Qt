@@ -68,6 +68,30 @@ QApplication 用于管理应用程序，通过 `a.exec()` 让 QApplication 对�
 
 Qt 可以将视图代码直接写在 main.cpp 中，但在 iOS 中，很少这样做。大多数情况下两者都是通过新建类文件来控制逻辑。
 
+#### 项目文件介绍
+
+```
+// Qt *.pro
+
+QT += core gui #项目模块，core 为 非图形用户界面核心功能， gui 扩展了 core 模块的图形界面功能
+
+TARGET = helloworld # 生成的 exe 文件名称
+TEMPLAE = app # 使用 app 模板，表明这是个应用程序
+
+SOURCES += main.cpp\ # 源文件
+		hellodialog.cpp
+
+HEADERS += hellodialog.h # 头文件
+
+FORMS += hellodialog.ui # 界面文件
+
+RC_FILE += myico.rc # 应用程序图标
+
+// Qt *.pro.user
+本地构建信息，含Qt版本、构建目录，因系统环境而不同
+一般桌面程序不需要包含
+```
+
 #### 资料
 
 * [QDialog](UI/window.md#QDialog)

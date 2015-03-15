@@ -1,12 +1,27 @@
 ### 主窗体
 
-<h4 id="QDialog">Qt:QDialog</h4>
+<h4 id="QDialog">QWidget/QDialog</h4>
 
-QDialog类是对话框窗口的基类。
+<img src='../images/11.png' />
 
-对话框窗口是主要用于短期任务以及和用户进行简要通讯的 **顶级窗口** 。QDialog可以是 **模式** 的也可以是 **非模式** 的。QDialog支持扩展性并且可以提供返回值。QDialog也可以有一个QSizeGrip在它的右下角，使用setSizeGripEnabled()。
+默认提供基类只有3种
 
-QDialog 对话框总是顶级窗口部件，但是如果它有一个父对象，它的默认位置就是父对象的中间。它也将和父对象共享工具条条目。
+* QMainWindow : 带菜单栏和工具栏的主窗口类
+* QDialog : 对话框基类
+* QWidget : 所有窗口部件的基类
+
+##### QWidget
+
+基础窗口部件，继承自 QObject (Qt 对象模型基类) 和 QPaintDevice (Qt 绘制对象基类)
+
+窗口是指没有嵌入到其他部件中的部件（通常构造函数中 parent 参数为 0），一般窗口都有边框和标题栏。
+
+##### QDialog
+
+QDialog 类是所有对话框窗口的基类。
+
+对话框窗口是主要用于短期任务以及和用户进行简单交互的 **顶级窗口** 。QDialog 可以是 **模式** 的也可以是 **非模式** 的。QDialog 支持扩展性并且可以 **提供返回值** 。
+
 
 这里有三种有用的对话框：
 
@@ -60,6 +75,11 @@ iOS 中的 `CGRectMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height) `方
 
 #### 添加类 Qt
 <img src='../images/09.png' />
+
+* 建立类（相当于iOS的ViewController），继承自 QDialog，（通过 show() 被调用）
+* 包含界面ui的头文件（运行项目时会自动生成）
+* 在该类中定义指向 ui类 的指针，并通过 `ui->setupUI(this)` 并实现关联
+* 通过该指针操作 ui 里的界面部件
 
 #### 添加类 iOS
 <img src='../images/10.png' />
