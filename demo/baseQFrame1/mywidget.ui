@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWidget</class>
+ <widget class="QWidget" name="MyWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyWidget</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>141</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>静态图片</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMovie">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>动态图片</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>10</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="smallDecimalPoint">
+    <bool>true</bool>
+   </property>
+   <property name="digitCount">
+    <number>7</number>
+   </property>
+   <property name="value" stdset="0">
+    <double>456.122999999999990</double>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>50</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>第1页</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>第2页</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>第3页</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>110</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>首先</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>其次</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>再次</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBox" name="toolBox">
+   <property name="geometry">
+    <rect>
+     <x>306</x>
+     <y>8</y>
+     <width>51</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="friends">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>49</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>好友</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="school">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>49</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>同学</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="unknow">
+    <attribute name="label">
+     <string>陌生人</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="blackname">
+    <attribute name="label">
+     <string>黑名单</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
