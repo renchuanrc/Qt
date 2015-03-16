@@ -22,3 +22,15 @@ QAbstractButton 按钮部件 （示例：Group Box Example）
 * QPushButton 标准按钮
 * QRadioButton 单选按钮
 * QToolButton 工具按钮
+
+QAbstractSpinBox 数值设定框
+
+* QDateTimeEdit 日期
+* QSpinBox 整数
+* QDoubleSpinBox 浮点数
+
+QAbstractSlider 滑块部件
+
+* QScrollBar 滚动条
+* QSlider 进度滑块
+* QDial 刻度表
