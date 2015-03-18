@@ -11,6 +11,7 @@ Qt 与 iOS 学习笔记
 * [本地化语言](language.md)
 * [应用程序图标](icon.md)
 * [快捷键](keyboard.md)
+* [资源管理](resource/resource.md)
 
 #### 窗体元件
 * [QDialog VS UIWindow](UI/window.md)
