@@ -43,7 +43,7 @@ int main(int argc,char * argv[]){
     QDialog w;
     QLabel label(&w);
     label.setText("Hello World!你好 Qt!");
-    w.show();
+    w.show(); //形成窗口
     return a.exec();
 }
 

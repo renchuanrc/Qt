@@ -2,12 +2,15 @@
 #include "ui_mywidget.h"
 #include <QDialog>
 #include "mydialog.h"
+#include <QDebug>
 
 MyWidget::MyWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::MyWidget)
 {
+    qDebug()<<"MyWidget::MyWidget - start";
     ui->setupUi(this);
+    qDebug()<<"MyWidget::MyWidget - start";
 
     // 添加一个对话框
     //QDialog dialog(this); 临时变量，作用域只有在构造函数内

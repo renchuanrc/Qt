@@ -4,6 +4,8 @@
 
 #include "mydialog.h"
 
+#include <QDebug>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -12,7 +14,11 @@ int main(int argc, char *argv[])
 
     MyWidget w;
     MyDialog dialog;
-    if (dialog.exec() == QDialog::Accepted){//判断 dialog 执行效果
+    qDebug()<<"dialog init end";
+
+    int msg = dialog.exec();
+    qDebug()<<"dialog.exec():"<<msg;
+    if (msg == QDialog::Accepted){//判断 dialog 执行效果
         w.show();
         return a.exec();
     }
