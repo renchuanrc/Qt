@@ -21,6 +21,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
+
 private:
     Ui::MainWindow *ui;
     QLineEdit *lineEdit;

@@ -18,3 +18,6 @@ HEADERS  += mainwindow.h \
     syntaxhighlighter.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    customcompleter.qrc

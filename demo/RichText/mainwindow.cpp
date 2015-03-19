@@ -100,12 +100,6 @@ MainWindow::MainWindow(QWidget *parent) :
     highlighter = new SyntaxHighlighter(ui->textEdit->document());
     ui->textEdit->append(tr("<h1><font color=red>使用HTML</font></h1>"));
 
-    // 自动补全
-//    QStringList wordList;
-//    wordList << "alpha" << "omega" << "omicron" << "zeta";
-//    QCompleter *completer = new QCompleter(wordList, this);
-//    completer->setCaseSensitivity(Qt::CaseInsensitive);
-//    lineEdit->setCompleter(completer);
 }
 
 MainWindow::~MainWindow()

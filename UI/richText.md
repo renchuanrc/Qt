@@ -25,3 +25,10 @@
 * QTextList 列表 <- QTextListFormat 列表格式
 
 文本块(Block)内容可以输出，框架(Frame)不可以输出
+
+#### 其它功能
+
+* 语法高亮
+* 自动补全（需要重写 QTextEdit）
+* 拖拽文件、图片
+
