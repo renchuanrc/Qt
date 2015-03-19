@@ -39,20 +39,21 @@ QLable label(&w);
 label.move(120,120);
 ```
 
-##### QMainWindow 主窗口框架
+##### [QMainWindow](./QMainWindow.md)
 
-* 菜单栏(QMenuBar*) : QMenu,QAction
-* 工具栏(QToolBar*) : QAction(+QToolButton)
-* 中心部件(Central Widget)
-* Dock部件（停靠窗口）(QDockWidget)
-* 状态栏(QStatusBar*)
+##### QSplitter
+分隔器，用于分隔窗口，在改变窗口尺寸时，子部件的尺寸也会同时改变。一个分隔器可以同时管理好几个窗口部件。如
 
 ```
-#状态栏3类信息
-临时消息：如提示信息，showMessage()
-正常消息：如页数行号，addWidget(QLable *)
-永久消息：如版本号日期，addPermanentWidget(QLable *)
+QSplitter *splitter = new QSplitter(parent);
+QListView *listview = new QListView;
+QTreeView *treeview = new QTreeView;
+QTextEdit *textedit = new QTextEdit;
+splitter->addWidget(listview);
+splitter->addWidget(treeview);
+splitter->addWidget(textedit);
 ```
+
 
 <h4 id="UIWindow">iOS:UIWindow</h4>
 

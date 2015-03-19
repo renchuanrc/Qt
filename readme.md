@@ -35,5 +35,5 @@ Qt 与 iOS 学习笔记
 参考资料
 
 * [Qt参考文档](http://www.kuqin.com/qtdocument/index.html)
-* [《Qt Creator 快速入门》](http://book.douban.com/subject/10745760/)
+* [《Qt Creator 快速入门》](http://book.douban.com/subject/10745760/) /demo 下为此书练习实例
 * [《C++ Qt 设计模式》](http://book.douban.com/subject/10764099/)

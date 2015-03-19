@@ -20,6 +20,9 @@ connect(
 在类中添加槽，以 on_信号对象_发送信息 为函数槽名
 public slots:
 	void on_showChildButton_clicked();
+
+// 在槽中可以继续发送信号
+emit getText(lineEdit->text());//发射信号
 ```
 
 ##### 保护槽

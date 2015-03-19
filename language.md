@@ -25,3 +25,6 @@ QTextCodec::setCodecForCStrings(QTextCodec::codecForLocale());
 
 QString::fromUtf8("emptyDialog");
 ```
+
+#### iOS
+

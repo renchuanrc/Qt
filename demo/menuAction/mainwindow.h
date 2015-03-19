@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void setText(const QString &string);//向文本编辑器中添加文本
 };
 
 #endif // MAINWINDOW_H
