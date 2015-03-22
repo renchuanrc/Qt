@@ -27,3 +27,10 @@ focusOutEvent() -> QEvent::FocusOut
 * QCloseEvent 关闭事件
 
 * QTimerEvent 计时器事件
+
+事件管理
+
+* installEventFilter(QObject *) 安装事件过滤器
+* eventFilter(QObject *,QEvent *); 处理监视事件
+* sendEvent() 立即处理给定事件
+* postEvent() 添加事件到事件队列，等待调用
