@@ -94,6 +94,37 @@ int main(int argc, char *argv[])
     // 结果为 ok: true 255
     qDebug()<<"ok"<<ok<<QObject::tr("转换为16进制：")<<hex;
 
+    num = 26;
+    qDebug()<<QObject::tr("使用16进制将整数转换为字符串：")
+            <<QString::number(num,16);
+    str="123.456";
+    qDebug()<<QObject::tr("字符串转换为浮点型：")<<str.toFloat();
+
+    str = "abc";
+    qDebug()<<QObject::tr("转换为大写：")<<str.toUpper();
+    str = "ABC";
+    qDebug()<<QObject::tr("转换为小写：")<<str.toLower();
+
+    int age = 25;
+    QString name = "yafie";
+    // name 代替 %1,age 代替2%
+    str = QString("name is %1,age is %2").arg(name).arg(age);
+    qDebug()<<QObject::tr("更改后的str为：")<<str;
+
+    str="%1 %2";
+    qDebug()<<str.arg("1f","hello");
+    qDebug()<<str.arg("1f").arg("hello");
+
+    str = QString("ni %1").arg("hi",5,'x');//???
+    qDebug()<<QObject::tr("设置字段宽度为5，使用'*'填充：")<<str;
+
+    qreal value = 123.456;
+    str = QString("number:%1").arg(value,0,'f',2);
+    qDebug()<<QObject::tr("设置小数点位数为两位：")<<str;
+
+    // 执行下面一行代码，结果为number：123.45 不会显示引号
+    qDebug()<<QObject::tr("将str转换为const char*:")<<qPrintable(str);
 
     return a.exec();
+
 }

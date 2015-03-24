@@ -1,6 +1,6 @@
 ## 本地化语言
 
-#### Qt
+#### Qt Internationalization
 在 Qt 中直接使用中文会出现乱码，需要在代码中引入 QTextCodec 类
 
 ```
