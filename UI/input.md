@@ -66,6 +66,8 @@ QAbstractSlider 滑块部件
 |View Controller| Split View Controllers<br/><img src="./pic/splitviewController.png" />||
 |Other|fixed space bar button item<br/><img src='./pic/fixedspacebarbuttonitem.png' />| Horizontal Spacer<br/>Vertical Spacer <br/><img src="./pic/qtSpacer.png" />|
 
+
 #### 参考资料
 
 * [About Views](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/index.html#//apple_ref/doc/uid/TP40012857-UIView-SW1)
+* [Swift UI控件实现大全](https://github.com/HunkSmile/Swift)

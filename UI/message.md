@@ -121,6 +121,18 @@ NSString *messageName = "sayHi";
 ```
 //关闭窗口返回主界面(Modal segue)
 [self dismissViewControllerAnimated:YES completion:nil];
+
+//打开另一个页面-代码示例
+var childController = ChildViewController()
+childController.title = "子页面标题"
+self.navigationController?.pushViewController(childController, animated:true)
+/*
+除了 pushViewController 还有
+popViewController
+popToRootViewControllerAnimated
+topViewController
+presentViewController 弹出模态视图
+*/
 ```
 
 #### 阅读资料
